@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+#  pull_request:
+#    branches: [main]
+#    types: [opened,synchronize]
+
 
 jobs:
   deploy:
@@ -25,6 +29,7 @@ jobs:
       - name: Test
         run: npm test
       - name: Deploy to Heroku
+        if ${{}}
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
