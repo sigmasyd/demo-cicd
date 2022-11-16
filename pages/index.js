@@ -15,6 +15,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Demo CI/CD
         </h1>
+        <ul>
+          <li>Analisis</li>
+          <li>Desarrollo</li>
+          <li>Implementación</li>
+        </ul>
+        De soluciones de software.
       </main>
 
       <footer className={styles.footer}>
